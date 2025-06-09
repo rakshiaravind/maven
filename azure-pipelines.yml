@@ -1,15 +1,11 @@
 trigger:
-  - master
-
+- master
 pool:
-  name: Default
-
+name: Default
 steps:
-  - script: echo Hello, it's my Azure DevOps App
-    displayName: 'Run an echo command'
-
-  - script: mvn clean install
-    displayName: 'Build with Maven'
-
-  - script: java -jar target/my-0.0.1-SNAPSHOT.jar
-    displayName: 'Run the JAR file'
+- script: echo Hello, it's my Azure Devops App
+displayName: 'Run an echo command'
+- script: mvn clean install
+displayName: 'Build with maven'
+- script: java -jar target/demoMaven-0.0.1-SNAPSHOT.jar
+displayName: 'Run a
